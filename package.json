@@ -7,7 +7,7 @@
     "atom-workspace": "Toggl:End",
     "atom-workspace": "Toggl:Start"
   },
-  "repository": "https://github.com/atom/toggl",
+  "repository": "https://github.com/dan12mol/toggl",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
