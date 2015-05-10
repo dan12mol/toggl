@@ -1,11 +1,6 @@
 # See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
 'context-menu':
-  'atom-text-editor': [
-    {
-      'label': 'Toggle toggl'
-      'command': 'toggl:toggle'
-    }
-  ]
+  'atom-text-editor': []
 'menu': [
   {
     'label': 'Packages'
@@ -13,8 +8,12 @@
       'label': 'toggl'
       'submenu': [
         {
-          'label': 'Toggle'
-          'command': 'toggl:toggle'
+          'label': 'Toggl Start'
+          'command': 'toggl:start'
+        },
+        {
+          'label': 'Toggl End'
+          'command': 'toggl:end'
         }
       ]
     ]

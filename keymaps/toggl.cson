@@ -8,4 +8,5 @@
 # For more detailed documentation see
 # https://atom.io/docs/latest/behind-atom-keymaps-in-depth
 'atom-workspace':
-  'ctrl-alt-o': 'toggl:toggle'
+  'cmd-ctrl-s': 'toggl:start'
+  'cmd-ctrl-e': 'toggl:end'
