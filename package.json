@@ -1,10 +1,9 @@
 {
   "name": "toggl",
   "main": "./lib/toggl",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Atom Package for having control over Toggl entries directly from your editor",
   "activationCommands": {
-    "atom-workspace": "Toggl:End",
     "atom-workspace": "Toggl:Start"
   },
   "repository": "https://github.com/dan12mol/toggl",
