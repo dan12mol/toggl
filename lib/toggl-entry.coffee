@@ -14,6 +14,8 @@ module.exports =
       col3_2.classList.add('col-lg-3');
       col3_3 = document.createElement('div');
       col3_3.classList.add('col-lg-3');
+      col3_4 = document.createElement('div');
+      col3_4.classList.add('col-lg-3');
 
       # create title
       title = document.createElement('h3');
@@ -43,16 +45,28 @@ module.exports =
       @billableInput.setAttribute('type', 'checkbox');
       @billableInput.setAttribute('id', 'billableInput');
 
+      # create project selector title
+      projectTitle = document.createElement('h3');
+      projectTitle.textContent = 'What project are you working on?'
+
+      # create selector for projects
+      @projectSelect = document.createElement('select');
+      @projectSelect.classList.add('form-control');
+      @projectSelect.setAttribute('id', 'projectSelect');
+
       # append elements to root element
       col3.appendChild(title);
       col3.appendChild(@textInput);
       col3_2.appendChild(tagsTitle);
       col3_2.appendChild(@tagsInput);
-      col3_3.appendChild(billableTitle);
-      col3_3.appendChild(@billableInput);
+      col3_3.appendChild(projectTitle);
+      col3_3.appendChild(@projectSelect);
+      col3_4.appendChild(billableTitle);
+      col3_4.appendChild(@billableInput);
       row.appendChild(col3);
       row.appendChild(col3_2);
       row.appendChild(col3_3);
+      row.appendChild(col3_4);
       @rootElement.appendChild(row);
 
 
@@ -63,4 +77,4 @@ module.exports =
       @rootElement
 
     getTextInputs: ->
-      [@textInput, @tagsInput, @billableInput]
+      [@textInput, @tagsInput, @projectSelect, @billableInput]
