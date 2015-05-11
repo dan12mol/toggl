@@ -12,6 +12,8 @@ module.exports =
       col3.classList.add('col-lg-3');
       col3_2 = document.createElement('div');
       col3_2.classList.add('col-lg-3');
+      col3_3 = document.createElement('div');
+      col3_3.classList.add('col-lg-3');
 
       # create title
       title = document.createElement('h3');
@@ -32,13 +34,25 @@ module.exports =
       @tagsInput.classList.add('form-control');
       @tagsInput.setAttribute('id', 'tagsInput');
 
+      # create billable title
+      billableTitle = document.createElement('h3');
+      billableTitle.textContent = 'Billable?'
+
+      # create checkbox for billable
+      @billableInput = document.createElement('input');
+      @billableInput.setAttribute('type', 'checkbox');
+      @billableInput.setAttribute('id', 'billableInput');
+
       # append elements to root element
       col3.appendChild(title);
       col3.appendChild(@textInput);
       col3_2.appendChild(tagsTitle);
       col3_2.appendChild(@tagsInput);
+      col3_3.appendChild(billableTitle);
+      col3_3.appendChild(@billableInput);
       row.appendChild(col3);
       row.appendChild(col3_2);
+      row.appendChild(col3_3);
       @rootElement.appendChild(row);
 
 
@@ -49,4 +63,4 @@ module.exports =
       @rootElement
 
     getTextInputs: ->
-      [@textInput, @tagsInput]
+      [@textInput, @tagsInput, @billableInput]
