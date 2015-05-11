@@ -2,6 +2,10 @@
   "name": "toggl",
   "main": "./lib/toggl",
   "version": "0.4.0",
+  "author": {
+    "name": "Dan Moldovan",
+    "email": "danmol18@gmail.com"
+  },
   "description": "Atom Package for having control over Toggl entries directly from your editor",
   "activationCommands": {
     "atom-workspace": "Toggl:Start"
