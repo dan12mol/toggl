@@ -11,7 +11,15 @@ module.exports =
       titleContainer.appendChild(titleLabel)
       titleContainer.appendChild(@title)
 
+      tagsContainer = document.createElement('h1')
+      tagsLabel = document.createElement('span')
+      tagsLabel.textContent = 'Tags: '
+      @tags = document.createElement('span')
+      tagsContainer.appendChild(tagsLabel)
+      tagsContainer.appendChild(@tags)
+
       @rootElement.appendChild(titleContainer)
+      @rootElement.appendChild(tagsContainer)
 
     destroy: ->
       @rootElement.remove()
@@ -22,4 +30,5 @@ module.exports =
     getLabels: ->
       {
         title: @title
+        tags: @tags
       }
