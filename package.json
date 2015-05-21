@@ -8,7 +8,7 @@
   },
   "description": "Atom Package for having control over Toggl entries directly from your editor",
   "activationCommands": {
-    "atom-workspace": "Toggl:Start"
+    "atom-workspace": ["Toggl:Start", "Toggle:End", "Toggl:Current"]
   },
   "repository": "https://github.com/dan12mol/toggl",
   "license": "MIT",
