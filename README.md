@@ -11,3 +11,4 @@ Use CMD+SHIFT+P to access command console
 
 - **Toggl:Start** -- brings up a panel with details to the Toggl Entry
 - **Toggl:End** -- Finished the current Toggl Entry and adds the 'finished' tag
+- **Toggl:Current** -- Displays information about your current Toggl Entry
