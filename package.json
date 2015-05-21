@@ -1,14 +1,18 @@
 {
   "name": "toggl",
   "main": "./lib/toggl",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "author": {
     "name": "Dan Moldovan",
     "email": "danmol18@gmail.com"
   },
   "description": "Atom Package for having control over Toggl entries directly from your editor",
   "activationCommands": {
-    "atom-workspace": ["Toggl:Start", "Toggle:End", "Toggl:Current"]
+    "atom-workspace": [
+      "Toggl:Start",
+      "Toggle:End",
+      "Toggl:Current"
+    ]
   },
   "repository": "https://github.com/dan12mol/toggl",
   "license": "MIT",
