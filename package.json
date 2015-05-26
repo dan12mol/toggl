@@ -1,7 +1,7 @@
 {
   "name": "toggl",
   "main": "./lib/toggl",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "author": {
     "name": "Dan Moldovan",
     "email": "danmol18@gmail.com"
