@@ -5,6 +5,15 @@ module.exports =
       @rootElement = document.createElement('div');
       @rootElement.setAttribute('id', 'togglEntry');
 
+      @loaderContainer = document.createElement('div');
+      @loaderContainer.classList.add('text-center');
+
+      loader = document.createElement('span');
+      loader.classList.add('loading');
+      loader.classList.add('loading-spinner-medium');
+
+      @loaderContainer.appendChild(loader);
+
       # create grid elements
       row = document.createElement('div');
       row.classList.add('row');
@@ -14,6 +23,8 @@ module.exports =
       col3_2.classList.add('col-lg-3');
       col3_3 = document.createElement('div');
       col3_3.classList.add('col-lg-3');
+      col3_3.setAttribute('hidden', true);
+      col3_3.setAttribute('id', 'projects-container');
       col3_4 = document.createElement('div');
       col3_4.classList.add('col-lg-3');
 
@@ -73,8 +84,14 @@ module.exports =
     destroy: ->
       @rootElement.remove()
 
+    destroyLoader: ->
+      @loaderContainer.remove()
+
     getElement: ->
       @rootElement
+
+    getLoader: ->
+      @loaderContainer
 
     getTextInputs: ->
       [@textInput, @tagsInput, @projectSelect, @billableInput]
